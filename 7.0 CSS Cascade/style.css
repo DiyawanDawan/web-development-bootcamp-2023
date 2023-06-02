@@ -1,6 +1,7 @@
 /* Don't change the existing CSS. */
 #outer-box {
-  border: 5px solid blueviolet;
+  background-color: blueviolet;
+  /* border: 5px solid blueviolet; */
 }
 
 .box {
