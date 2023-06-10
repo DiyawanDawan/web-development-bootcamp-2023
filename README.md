@@ -21,3 +21,6 @@ error: failed to push some refs to 'https://github.com/DiyawanDawan/web-developm
 
     padding in site
     margin out site
+
+== CSS Spesific inheritanse ==
+Line css is type waterfalll

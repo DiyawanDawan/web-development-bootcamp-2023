@@ -1,18 +1,31 @@
 /* Write your code here: */
-h1, h2 {
-    color: blueviolet
-}
-.box> p{
-    color: red;
+.box {
+    background-color: #971111;
+    width: 100%;
+    padding: 4px;
 }
 
-.box > lu {
+h1, h2 {
+color: blueviolet;
+}
+
+box > p {
+ color:  rgb(255, 10, 10);
+}
+
+p.done {
+    color: aqua;
+}
+li {
+    color: yellow;
+}
+.bok li {
     color: blue;
 }
 li.done {
-    color: aqua;
+    color: green;
 }
+
 ul p.done {
     font-size: 0.5rem;
-  }
-  
+}
