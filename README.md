@@ -23,4 +23,4 @@ error: failed to push some refs to 'https://github.com/DiyawanDawan/web-developm
     margin out site
 
 == CSS Spesific inheritanse ==
-Line css is type waterfalll
+Line css is konsep type waterfall
