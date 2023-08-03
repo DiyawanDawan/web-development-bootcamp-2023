@@ -18,11 +18,13 @@
 
 .icon-square {
   width: 3rem;
+  margin: 4px;
+  padding: 4px;
   height: 3rem;
   border-radius: 0.75rem;
 }
 
 .profile-img {
-  height: 100px;
+  height: 150px;
   border-radius: 50%;
 }
