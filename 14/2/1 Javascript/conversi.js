@@ -27,14 +27,29 @@ console.log(addOperator()) // 2010 => JS automatic conversi number2 to string or
  * Boolean("");           // false
  */
 
-const a = "22";
-const b = 10;
+// const a = "22";
+// const b = 10;
+//
+// function convrsi(){
+//     let result = Number(a) + b;
+//     return  result
+// }
+//
+// console.log(convrsi()) // 220 => a conversi tonumber
+//
+// console.log(6 - 1 + "4" + 2)
 
-function convrsi(){
-    let result = Number(a) + b;
-    return  result
-}
 
-console.log(convrsi()) // 220 => a conversi tonumber
+const a = -17
+console.log(typeof (a))
 
-console.log(6 - 1 + "4" + 2)
+const b = "";
+console.log(typeof(b))
+
+const c = "false"
+
+const d = 0
+
+// const halo = true;
+// const conver = String(halo)
+// console.log(typeof (conver))
