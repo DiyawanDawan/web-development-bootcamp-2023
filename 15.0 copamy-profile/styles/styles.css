@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*font-family: 'Kufam', sans-serif;*/
+/*font-family: 'Nunito', sans-serif;*/
+.container {
+    height: 3000vh;
+}
+:root {
+    --primary: #FFC265;
+    --background: #30beae;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav .nav-list {
+    display: flex;
+    list-style-type: none;
+}
+nav .nav-list .nav-item {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .nav-list .list-item a {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+nav .nav-list .list-item a:hover {
+    color: var(--primary);
+}
+
+nav .contact a{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+nav .contact a:hover{
+    color: var(--background);
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+nav .logo h1 {
+    z-index: 1;
+    color: var(--background);
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    margin-top: 3.7rem;
+    display: flex;
+    flex-direction: row;
+    position: static;
+}
+.hero .hero-brand {
+    line-height: 2rem;
+    flex: 1;
+    padding-right: 20px;
+}
+.hero .hero-brand .sub-title {
+    display: inline-block;
+    padding: 0.1rem 2.5rem;
+    color: var(--background);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #abffff;
+}
+.hero .hero-brand .titel-hero, .about-detail .about-title  {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    max-width: 645px;
+    font-family: 'Kufam', sans-serif;
+    line-height: 4rem;
+}
+.hero .hero-brand .hero-desc, .about-detail .about-dest {
+    max-width: 645px;
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 1.5rem;
+}
+.hero .hero-brand .btn {
+    background-color: var(--primary);
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+}
+.hero .hero-image {
+    flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    /*overflow: visible;*/
+}
+
+.hero-image .card, .about .card {
+    position: absolute;
+    overflow: visible;
+    z-index: 1;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.hero-image .card .card-img {
+    width: 23%;
+    height: auto;
+}
+.about-rating .card img {
+    width: 20%;
+}
+.about-rating .card .title .card-title {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+.about-rating .card .title .card-text {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+.hero-image .card:last-child {
+    top: 0;
+    right: 0;
+}
+.hero-image .card .title {
+    margin-left: 0.7rem;
+}
+
+.about {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.about-rating {
+    position: relative;
+    display: flex;
+    margin-right: 2rem;
+    flex-direction: column;
+}
+.about-rating, .about-detail {
+    flex: 1;
+}
+.about .card:nth-child(3) {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
+.about .card:nth-child(2) {
+    position: absolute;
+    bottom: 4rem;
+    right: 5rem;
+}
+.about-rating .card:nth-last-child(1){
+    position: absolute;
+    bottom: -3rem;
+    left: 34%;
+    transform: translateX(-50%);
+}
+
+.about-detail ul {
+    list-style: none;
+    padding-top: 1.5rem;
+}
+.about-detail ul li {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+
+.about-detail ul li i {
+    color: var(--background);
+    margin-right: 0.5rem;
+}
