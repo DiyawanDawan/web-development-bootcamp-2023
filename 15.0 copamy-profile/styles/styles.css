@@ -103,12 +103,14 @@ nav .logo h1 {
     font-family: 'Nunito', sans-serif;
     padding-top: 1.5rem;
 }
-.hero .hero-brand .btn {
+
+.btn {
     background-color: var(--primary);
     padding: 1.2rem 2.5rem;
     border-radius: 10px;
     font-size: 1rem;
     margin-top: 1rem;
+    cursor: pointer;
     border: none;
 }
 .hero .hero-image {
@@ -174,12 +176,12 @@ nav .logo h1 {
 }
 .about .card:nth-child(2) {
     position: absolute;
-    bottom: 4rem;
+    bottom: 10rem;
     right: 5rem;
 }
 .about-rating .card:nth-last-child(1){
     position: absolute;
-    bottom: -3rem;
+    bottom: 5rem;
     left: 34%;
     transform: translateX(-50%);
 }
@@ -199,4 +201,207 @@ nav .logo h1 {
 .about-detail ul li i {
     color: var(--background);
     margin-right: 0.5rem;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: 2px var(--primary) solid;
+    margin-left: 1.5rem;
+    color: var(--primary);
+}
+
+.btn-light:active {
+    transition: 0.1s;
+    color: #000000;
+    background-color: var(--primary);
+}
+
+.package {
+    margin-top: 7rem;
+}
+
+.package-heading {
+    font-family: 'Kufum', sans-serif;
+    text-align: center;
+    line-height: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.package-heading .package-title {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 600px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.package-heading .package-dest {
+    max-width: 600px;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+    font-size: 1.4rem;
+}
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.package-container .card {
+    border: 2px var(--primary) solid;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 10px 7px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.package-container  .card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.package-container .card-seler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+.package-container .card-seler h5 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.package-container .card-seler .btn-saler {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: -2rem;
+    color: #57ace8;
+    font-size: 1rem;
+    background-color: #C1FFFA;
+}
+.package-container .card-title {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Kufam', sans-serif;
+}
+.package-container .card-price {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'Kufam', sans-serif;
+}
+.package-container .card-price span {
+    color: var(--background);
+}
+.package-container .card-service {
+    margin-top: 0.7rem;
+}
+.package-container .card-service li:last-child {
+    margin-right: 0;
+}
+.package-container .card-service ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.package-container .card-service ul li {
+    background-color: var(--background);
+    margin-right: 0.7em;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+    border-radius: 0.5rem;
+}
+.package-container button {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    padding: 1rem 3rem;
+}
+.accomondation {
+    padding-top: 4rem;
+    margin: 1.5rem;
+    /*flex-direction: row;*/
+    display: flex;
+}
+.accomondation .accomondation-heading {
+    max-width: 300px;
+}
+.accomondation-heading h3 {
+    font-size: 2rem;
+    font-family: 'Kufam', sans-serif;
+}
+.accomondation-heading p {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+.accomondation-heading .ratin {
+    background-color: #C1FFFA;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    color: #1DA599;
+}
+.accomondation-heading i {
+    color: var(--primary);
+}
+.accomondation .logo-pland img{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    width: 170px;
+}
+.ficilities {
+    margin: 1rem;
+    padding: 1.5rem 0;
+    background-color: #F3FFFE;
+}
+.ficilities h2 {
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Kufam', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ficilities .dest{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    max-width: 645px;
+    margin: auto;
+}
+.ficilities .card {
+    box-shadow: 7px 10px 30px 10px rgba(0,0,0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 2rem;
+    display: inline-block;
+}
+.ficilities .card-body {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+.ficilities .card-body .icon {
+    background-color: #C1FFFA;
+    color: var(--background);
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    text-align: start;
+    /*vertical-align: top;*/
+}
+.card-body .title {
+    max-width: 250px;
+    padding-top: 1rem;
+    margin-left: 0.5rem;
 }
