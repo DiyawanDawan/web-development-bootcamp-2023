@@ -5,9 +5,7 @@
 
 /*font-family: 'Kufam', sans-serif;*/
 /*font-family: 'Nunito', sans-serif;*/
-.container {
-    height: 3000vh;
-}
+
 :root {
     --primary: #FFC265;
     --background: #30beae;
@@ -375,33 +373,208 @@ nav .logo h1 {
     max-width: 645px;
     margin: auto;
 }
-.ficilities .card {
+.facilities-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mengatur lebar kartu */
+    gap: 20px;
+}
+
+.facilities-container .card {
     box-shadow: 7px 10px 30px 10px rgba(0,0,0, 0.1);
     border-radius: 0.5rem;
     padding: 1rem;
-    margin: 1rem;
-    gap: 2rem;
-    display: inline-block;
+    width: auto;
+    margin-top: 2rem;
 }
-.ficilities .card-body {
+
+.facilities-container .card .card-body {
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
 }
-.ficilities .card-body .icon {
+
+.facilities-container .card i {
+    display: block;
     background-color: #C1FFFA;
     color: var(--background);
-    display: inline-block;
     font-size: 1.5rem;
-    margin: auto;
-    padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    position: relative;
-    text-align: start;
-    /*vertical-align: top;*/
 }
-.card-body .title {
-    max-width: 250px;
-    padding-top: 1rem;
-    margin-left: 0.5rem;
+
+.facilities-container .card .card-body .title {
+    margin-left: 1rem;
+}
+
+
+.custemer-testemonial  h2{
+    font-family: 'Kufam', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    /*align-items: center;*/
+    text-align: right;
+    margin: auto;
+    max-width: 600px;
+}
+
+.custemer-testemonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custemer-testemonial button {
+    padding: 0.9rem 1.9rem;
+    border: 1px solid var(--background);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+    position: relative;
+    margin-top: 11rem;
+}
+
+.custemer-testemonial p {
+    font-family: 'Kufam', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+    /*align-items: center;*/
+    text-align: right;
+    margin: auto;
+    max-width: 600px;
+}
+.container-testemonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 10px;
+}
+.container-testemonial .card {
+    box-shadow: 7px 10px 30px 10px rgba(0,0,0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: auto;
+    animation: slideIn 15s linear infinite;
+}
+
+.container-testemonial .card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-testemonial .card-rating-review {
+    margin-right: 20px;
+}
+
+.container-testemonial .card-rating-review img {
+    width: 70px;
+    height: 70px;
+}
+.container-testemonial .card-rating-review .rating {
+    color: var(--background);
+    background-color: #C1FFFA;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.container-testemonial .card-desc {
+    /*padding: 20px;*/
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+.container-testemonial .card-desc button {
+    background-color: #C1FFFA;
+    color: var(--background);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.container-testemonial .card-desc h3 {
+    font-size: 1.5rem;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 500;
+}
+/*.container-testemonial {*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.gallery {
+    text-align: center;
+}
+.gallery h2 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.gallery p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.gallery .imgae-galler {
+    float: left;
+}
+
+footer {
+    background-color: var(--background);
+    color: #ffffff;
+    padding: 3rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer .contact img{
+    width: 150px;
+    height: auto;
+}
+
+footer  .link {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+footer  .link  h3 {
+    margin-left: 1rem;
+}
+footer  .link  ul {
+    margin-left: 1rem;
+    /*text-decoration: none;*/
+}
+footer  .link  ul li  {
+    list-style: none;
+    /*color: var(--background);*/
+}
+footer  .link  ul li a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.sosial-media {
+    margin: 1rem;
+    border-top: 2px #ffffff solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosial-media .icon i {
+    background-color: #ffffff;
+    color: #00B9FF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.6rem;
 }
