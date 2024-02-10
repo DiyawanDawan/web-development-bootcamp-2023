@@ -21,15 +21,42 @@
 //     console.log(`Number1 ${number1} >= ${number2} Atau Number 1 ${number1} sama Nilainya dengan ${number2}`)
 // }
 
-let egeWomone = 16;
-let egeMen = 17
-let isMeried = 'Meried'
+/**
+ * let egeWomone = 16;
+ * let egeMen = 17
+ * let isMeried = 'Meried'
+ *
+ *
+ * if(egeWomone >= 17 && egeMen >= 18) {
+ *     console.log(`${isMeried} Now I'm Meried`);
+ * } else if(egeWomone >= 15 && egeMen >= 16) {
+ *     console.log(`I'm Not ${isMeried} Now is Remaja`);
+ * } else {
+ *     console.log('Masih suka Colli')
+ * }
+ */
 
 
-if(egeWomone >= 17 && egeMen >= 18) {
-    console.log(`${isMeried} Now I'm Meried`);
-} else if(egeWomone >= 15 && egeMen >= 16) {
-    console.log(`I'm Not ${isMeried} Now is Remaja`);
-} else {
-    console.log('Masih suka Colli')
-}
+// Value True not is typeData
+let val1 = 5;
+let val2 = '5';
+// Checking of operands
+console.log(val1 !== 6);
+console.log(val2 !== '5');
+console.log(val1 !== val2);
+
+console.log(val1 != 6)
+console.log(val2 != '5')
+console.log(val2 != val2)
+
+
+// console.log(val1 == 5)
+// console.log(val2 == 5)
+// console.log(val1 == val2)
+// Autput 3 is true
+
+// console.log(0 == false)
+// console.log(0 == null)
+// console.log(0 == undefined)
+// console.log(undefined == null)
+// console.log(null == false)
