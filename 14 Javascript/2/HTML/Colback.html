@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Function Collback Promis</h1>
+
+<p>The result of the calculation is:</p>
+<p id="demo"></p>
+
+<script>
+    // let myPromise = new Promise(function (resolve, reject){
+    //     setTimeout(function (){
+    //         resolve('Response Oke')
+    //     }, 3000)
+    // })
+    // myPromise.then(
+    //     function (value){
+    //         document.getElementById('demo').innerHTML = value;
+    //     }
+    // )
+
+
+//     setTimeout(function (){
+// displayVAlue('Jancok');
+//     }, 3000)
+//
+
+
+function displayVAlue(value){
+        document.getElementById('demo').innerHTML = value;
+}
+
+function getData(myColback) {
+    let req = new XMLHttpRequest()
+    req.open(('GET', 'mycar.html'));
+    req.onload = function (){
+        if (req.status === 200){
+            myColback(req.responseText)
+        }else {
+            myColback('Error', req.status)
+        }
+    }
+    req.send();
+}
+getData(displayVAlue())
+
+
+    // function myDisplayer(some) {
+    //     document.getElementById("demo").innerHTML = some;
+    // }
+    //
+    // let myPromise = new Promise(function(resolve, reject) {
+    //     let x = 0;
+    //     if (x == 0) {
+    //         resolve("OK")
+    //     }
+    //     else {
+    //         reject("Error")
+    //     }
+    // });
+    //
+    // myPromise.then(
+    //     function(value) {myDisplayer(value);},
+    //     function(error) {myDisplayer(error);}
+    // )
+</script>
+
+</body>
+</html>

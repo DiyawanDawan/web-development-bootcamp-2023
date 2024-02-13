@@ -1,8 +1,8 @@
 // dunction Expresion
 
 
-// const teganganListrik = 120;
-/*
+const teganganListrik = 120;
+
 let nyalakanLampu = function (teganganListrik) {
     if (teganganListrik >= 120) {
         console.log('Nyalakan Lampu Sekarang')
@@ -14,7 +14,13 @@ let nyalakanLampu = function (teganganListrik) {
 }
 
 export default nyalakanLampu;
-*/
+
+function sayMimin(){
+    console.log('Say Mimin');
+}
+export {
+    sayMimin,
+}
 
 /*
 function welcomeMsg(name) {
