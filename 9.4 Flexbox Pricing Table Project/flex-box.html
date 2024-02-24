@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-Box</title>
+  <style>
+    .geeks {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #4d078f;
+    }
+    h2 {
+      text-align: center;
+    }
+    .gfg_flex {
+      display: flex;
+      /*flex-direction: row;*/
+      /*flex-wrap: nowrap;*/
+      flex-wrap: wrap;
+      background-color: greenyellow;
+      text-align: center;
+    }
+    .gfg_flex > div {
+      background-color: #b58863;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      font-size: 2rem;
+      text-align: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class = "geeks">GeeksforGeeks</div>
+  <h2>flex-direction Property</h2>
+    <div class="gfg_flex">
+      <div>Box A</div>
+      <div>Box B</div>
+      <div>Box C</div>
+      <div>Box D</div>
+      <div>Box E</div>
+      <div>Box F</div>
+      <div>Box G</div>
+      <div>Box H</div>
+      <div>Box I</div>
+    </div>
+</body>
+</html>

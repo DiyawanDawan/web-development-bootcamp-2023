@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>GeeksforGeeks CSS Media Query</title>
+    <meta content="CSS Media Query for all devices like mobile, tablet, desktop etc." name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: #00ff00;
+            padding: 30px;
+            font-size: 30px;
+            width: auto;
+            flex-direction: column;
+            color: black;
+        }
+
+        .box-1 {
+            background-color: #b58863;
+            width: 300px;
+            margin: 1rem;
+            height: 300px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .box {
+                background-color: #63c971;
+                color: #F0F1EC;
+                flex-direction: row;
+            }
+        }
+        @media screen and (min-device-width: 780px) {
+            .box-1 {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                color: black;
+            }
+        }
+        @media screen and (max-device-width: 480px) and (orientation: landscape){
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box-1">Box 1</div>
+    <div class="box-1">Box 2</div>
+</div>
+</body>
+</html>

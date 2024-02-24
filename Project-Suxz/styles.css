@@ -1,0 +1,267 @@
+:root {
+    --primay: #8C82FC;
+    --bg: #44E4C9;
+    --white: #FFFFFF;
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+}
+main {
+    height: 2000px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+nav {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .btn {
+    margin-top: 1.3rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 4.1rem;
+    height: 5rem;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+
+.nav-list ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-list ul li a {
+    /* font-style: normal; */
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-list ul li a:hover {
+    color: #565656;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav .btn .btn-login {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    margin-right: 2rem;
+    padding: 0.5rem 2.4rem;
+    color: var(--primay);
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid var(--primay);
+    font-weight: 300;
+}
+
+nav .btn .btn-login:hover {
+    border: 1px solid var(--primay);
+    transform: rotate(3);
+    border-radius: 0.6rem;
+    margin-right: 2rem;
+    padding: 0.8rem 2rem;
+}
+
+nav .btn .btn-login:active {
+    background-color: var(--primay);
+    color: var(--white);
+    transition: 0.9s;
+}
+
+nav .btn .btn-signup {
+    text-align: center;
+    background-color: var(--primay);
+    border-radius: 0.6rem;
+    margin-right: 2rem;
+    padding: 0.6rem 2.2rem;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    font-weight: 300;
+}
+
+nav .btn .btn-signup:active {
+    background-color: var(--white);
+    color: var(--primay);
+    border: 1px solid var(--primay);
+    transition: 0.9s;
+}
+
+.hero {
+    padding-top: 2rem;
+    margin-top: 4rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.hero .services {
+    width: 500px;
+}
+
+.hero .sub-titel {
+    color: var(--primay);
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.hero .title {
+    font-weight: 700;
+    padding: 1rem 0rem;
+    font-size: 3rem;
+    font-optical-sizing: auto;
+}
+
+.hero .desckripsi {
+    line-height: 1.9rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
+}
+
+.services .btn-get-start {
+    background-color: var(--primay);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 1rem 0 0;
+    cursor: pointer;
+}
+
+.services .btn-get-start:active {
+    background-color: var(--white);
+    color: var(--primay);
+    transition: 1s;
+    border: 1px solid var(--primay);
+}
+
+.services .btn-service {
+    background-color: #F7F7FD;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--primay);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    border: 1px solid var(--primay);
+    font-size: 1rem;
+    margin: 1rem 1rem 0 0;
+    cursor: pointer;
+}
+
+.services .btn-service:active {
+    background-color: #8e8f8f;
+    color: var(--white);
+    transition: 1s;
+    border: 1px solid var(--primay);
+}
+
+.hero .services-header img {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+/* TODO: Css Laeaning */
+.learnings_section {
+    padding-top: 3rem;
+    background-color: #F6F6F6;
+}
+.container-learning  {
+    max-width: 500px;
+}
+.container-learning .learning {
+    color: var(--primay);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container-learning .learning-titel {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-container {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    /* max-width: 200px; */
+    padding: 1.2rem;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    padding: 1.0rem 0;
+    width: 80px;
+    border-radius: 1.5rem;
+}
+
+.card-titel {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.card-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.btn-card {
+text-decoration: none;
+    display: block; /* or inline-block */
+    text-align: center;
+    background-color: var(--bg);
+    border-radius: 0.6rem;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    padding: 0.6rem 0;
+    font-weight: 300;
+    width: 100%; /* Set the width to 100% */
+}

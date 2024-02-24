@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Griid Proprty</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: greenyellow;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #4d078f;
+
+        }
+        .grid-container {
+            display: grid;
+            background-color: blue;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            gap: 1rem;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-item {
+            background-color: #746b6b;
+            padding: 1rem;
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid yellow;
+        }
+        .headinf2 {
+            margin-top: 1rem;
+        }
+
+    /*    CSS Griid 2*/
+
+        .grid-container-dua {
+            display: grid;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto;
+            background-color: darkgreen;
+            grid-gap: 10px;
+        }
+
+        .grid-container-dua > div {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 3rem;
+            background-color: #4285f4;
+        }
+        .item1 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item3 {
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        .item5 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .item6 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+<h2>Welcome Example Grid Propery</h2>
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+</div>
+<h2 class="headinf2">Grid Container dua</h2>
+<div class="grid-container-dua">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+</div>
+</body>
+</html>
