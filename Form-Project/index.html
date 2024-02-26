@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <style>
+        input,
+        .looks-like-input {
+            border: 1px solid black;
+            display: block;
+            width: 20em;
+            max-width: calc(100vw - 80px);
+            padding: 0.4em;
+        }
+
+        .looks-like-label {
+            margin-top: 1rem;
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <main>
+        <div class="wrapper">
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="looks-like-label" for="name1">Name</div>
+                <div id="name1" class="looks-like-input" contenteditable></div>
+                <button>Save</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
